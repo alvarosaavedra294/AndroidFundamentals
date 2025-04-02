@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Day1</string>
+
+    <string name="hello_world">Hello World! from strings file</string>
+    <string name="generated">Generated from activity</string>
+    <string name="hello_world_name">Hello World %1$s</string>
+</resources>
