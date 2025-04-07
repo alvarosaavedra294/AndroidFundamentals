@@ -42,9 +42,9 @@
     <LinearLayout
         android:id="@+id/secondSection"
         android:layout_width="match_parent"
-        android:visibility="invisible"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:visibility="invisible">
 
         <Button
             android:layout_width="wrap_content"
@@ -64,6 +64,10 @@
             android:layout_weight="0.1"
             android:text="Press Me2" />
     </LinearLayout>
+
+    <include
+        android:id="@+id/generic1"
+        layout="@layout/generic_frame" />
 
 
 </LinearLayout>
