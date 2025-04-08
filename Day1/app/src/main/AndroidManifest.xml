@@ -10,10 +10,22 @@
         android:theme="@style/Theme.Day1"
         tools:targetApi="31">
         <activity
-            android:name=".class3.EmptyActivity"
+            android:name=".class4.recycler.RecyclerActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".class4.navForResult.LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".class3.ConditionalsActivity"
+            android:name=".class4.navForResult.FormActivity"
+            android:exported="false" />
+        <activity
+            android:name=".class4.navForResult.HomeActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,11 +34,30 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".class4.backstack.DActivity"
+            android:exported="false" />
+        <activity
+            android:name=".class4.backstack.CActivity"
+            android:exported="false"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".class4.backstack.BActivity"
+            android:exported="false" />
+        <activity
+            android:name=".class4.backstack.AActivity"
+            android:exported="true" />
+        <activity
+            android:name=".class3.EmptyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".class3.ConditionalsActivity"
+            android:exported="true" />
+        <activity
             android:name=".class2.ConstraintExampleActivity"
             android:exported="false" />
         <activity
             android:name=".class2.KotlinExamplesActivity"
-            android:exported="false"></activity>
+            android:exported="false" />
         <activity
             android:name=".class1.SecondActivity"
             android:exported="false" />
