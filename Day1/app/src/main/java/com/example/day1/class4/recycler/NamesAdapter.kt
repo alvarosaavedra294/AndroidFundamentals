@@ -6,9 +6,7 @@ import androidx.recyclerview.widget.RecyclerView.Adapter
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.example.day1.databinding.SimpleItemBinding
 
-class NamesAdapter(val nameList:List<String>):Adapter<NamesAdapter.NameViewHolder>() {
-
-
+class NamesAdapter(val nameList:MutableList<String>):Adapter<NamesAdapter.NameViewHolder>() {
 
     class NameViewHolder(val binding:SimpleItemBinding):ViewHolder(binding.root)
 
@@ -25,4 +23,14 @@ class NamesAdapter(val nameList:List<String>):Adapter<NamesAdapter.NameViewHolde
     override fun onBindViewHolder(holder: NameViewHolder, position: Int) {
        holder.binding.mainText.text = nameList[position]
     }
+
+
+    fun updateName(position: Int){
+        if (position >1){
+            nameList[position -1] = "Updated Name ${position - 1}"
+            notifyItemChanged(position - 1)
+        }
+
+    }
+
 }
