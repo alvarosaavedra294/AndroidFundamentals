@@ -1,11 +1,14 @@
 package com.example.day1.class4.recycler
 
+import android.os.Build
 import android.os.Bundle
+import android.util.Log
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.day1.R
+import com.example.day1.class4.recycler.models.Data
 import com.example.day1.databinding.ActivityFullImageBinding
 
 class FullImageActivity : AppCompatActivity() {
@@ -24,8 +27,14 @@ class FullImageActivity : AppCompatActivity() {
 
 
         val imageId: Int = intent.getIntExtra("imageId", 0)
+        val data: Data? = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+            intent.getParcelableExtra("data", Data::class.java)
+        } else {
+            intent.getParcelableExtra("data")
+        }
         if (imageId != 0) {
             binding.fullImage.setImageResource(imageId)
         }
+        Log.d("FullImageActivity", data?.name ?: "no data ")
     }
 }

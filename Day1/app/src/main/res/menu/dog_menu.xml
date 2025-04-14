@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/sort"
+        android:icon="@drawable/baseline_sort_24"
+        android:title="@string/sort_animals"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/info"
+        android:icon="@drawable/baseline_info_24"
+        android:title="Info"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/delete"
+        android:icon="@drawable/baseline_delete_24"
+        android:title="delete"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/delete2"
+        android:icon="@drawable/baseline_delete_24"
+        android:title="delete"
+        app:showAsAction="ifRoom" />
+
+</menu>
