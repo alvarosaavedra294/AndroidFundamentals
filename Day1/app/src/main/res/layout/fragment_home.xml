@@ -3,35 +3,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.CFragment">
+    tools:context=".fragmentNavigation.HomeFragment">
 
     <!-- TODO: Update blank fragment layout -->
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="This is fragment C" />
 
-        <TextView
-            android:id="@+id/fromTv"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="match_parent"
+            android:text="@string/hello_blank_fragment" />
 
         <Button
-            android:id="@+id/addFragmentA"
+            android:id="@+id/buttonToDFragment"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Add fragment A" />
+            android:text="Go to DFragment" />
 
-        <FrameLayout
-            android:id="@+id/fragmentAContainer"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+        <Button
+            android:id="@+id/buttonToCFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="goto CFragment" />
     </LinearLayout>
-
 
 </FrameLayout>

@@ -8,11 +8,11 @@
     </style>
 
     <style name="Theme.Day1" parent="Base.Theme.Day1">
-        <item name="android:buttonStyle">@style/MyButton</item>
+        <item name="materialButtonStyle">@style/MyButton</item>
     </style>
 
 
-    <style name="MyButton" parent="Widget.MaterialComponents.Button">
+    <style name="MyButton" parent="Widget.Material3.Button">
         <item name="android:backgroundTint">@color/blue</item>
         <item name="android:textColor">#FFFFFF</item>
         <item name="android:padding">10dp</item>

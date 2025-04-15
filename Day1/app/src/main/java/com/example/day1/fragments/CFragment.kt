@@ -45,6 +45,13 @@ class CFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.fromTv.text = arguments?.getString("parent") ?: "no data"
+        binding.addFragmentA.setOnClickListener {
+            val fragment = AFragment()
+            val transaction = childFragmentManager.beginTransaction()
+            transaction.replace(R.id.fragmentAContainer, fragment)
+            transaction.addToBackStack(null)
+            transaction.commit()
+        }
 
     }
 

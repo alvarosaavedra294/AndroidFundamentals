@@ -12,7 +12,7 @@
         android:theme="@style/Theme.Day1"
         tools:targetApi="31">
         <activity
-            android:name=".fragments.FatherActivity"
+            android:name=".retrofit.UsersActivity"
             android:exported="true" >
 
             <intent-filter>
@@ -22,11 +22,17 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".class4.themes.ThemesAndStylesActivity"
-            android:exported="true"
-            android:theme="@style/Theme.Day1">
+            android:name=".fragmentNavigation.FragmentNavigationActivity"
+            android:exported="false">
 
         </activity>
+        <activity
+            android:name=".fragments.FatherActivity"
+            android:exported="false"></activity>
+        <activity
+            android:name=".class4.themes.ThemesAndStylesActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Day1" />
         <activity
             android:name=".class4.includeMerge.IncludeExampleActivity"
             android:exported="false" />
@@ -36,13 +42,7 @@
             android:parentActivityName=".class4.recycler.RecyclerActivity" />
         <activity
             android:name=".class4.recycler.RecyclerActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="false"></activity>
         <activity
             android:name=".class4.navForResult.LoginActivity"
             android:exported="false" />
@@ -52,13 +52,7 @@
             android:label="Form" />
         <activity
             android:name=".class4.navForResult.HomeActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".class4.backstack.DActivity"
             android:exported="false" />
