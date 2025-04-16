@@ -3,6 +3,16 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
 
     <application
         android:icon="@mipmap/ic_launcher"
@@ -12,7 +22,7 @@
         android:theme="@style/Theme.Day1"
         tools:targetApi="31">
         <activity
-            android:name=".retrofit.UsersActivity"
+            android:name=".permissions.PermissionsActivity"
             android:exported="true" >
 
             <intent-filter>
@@ -22,13 +32,16 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".fragmentNavigation.FragmentNavigationActivity"
+            android:name=".retrofit.UsersActivity"
             android:exported="false">
 
         </activity>
         <activity
-            android:name=".fragments.FatherActivity"
+            android:name=".fragmentNavigation.FragmentNavigationActivity"
             android:exported="false"></activity>
+        <activity
+            android:name=".fragments.FatherActivity"
+            android:exported="false" />
         <activity
             android:name=".class4.themes.ThemesAndStylesActivity"
             android:exported="false"
@@ -42,7 +55,7 @@
             android:parentActivityName=".class4.recycler.RecyclerActivity" />
         <activity
             android:name=".class4.recycler.RecyclerActivity"
-            android:exported="false"></activity>
+            android:exported="false" />
         <activity
             android:name=".class4.navForResult.LoginActivity"
             android:exported="false" />
@@ -52,7 +65,7 @@
             android:label="Form" />
         <activity
             android:name=".class4.navForResult.HomeActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".class4.backstack.DActivity"
             android:exported="false" />
@@ -83,7 +96,8 @@
             android:exported="false" />
         <activity
             android:name=".class1.MainActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Dialog" />
 
         <meta-data
             android:name="preloaded_fonts"

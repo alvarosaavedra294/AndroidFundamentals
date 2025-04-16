@@ -39,6 +39,7 @@ class DFragment : Fragment() {
         binding.mainText.text = name
 
         binding.backButton.setOnClickListener {
+
             findNavController().navigateUp()
         }
     }
