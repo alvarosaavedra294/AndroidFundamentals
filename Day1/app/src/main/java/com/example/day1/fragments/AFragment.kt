@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.day1.R
+import com.example.day1.persistence.PreferenceHelper
 
 
 class AFragment : Fragment() {
